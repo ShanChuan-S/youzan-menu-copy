@@ -1,0 +1,40 @@
+.nav-list-container {
+    display: inline-block;
+    margin-left: 48px;
+    list-style: none;
+    li {
+        text-align: center;
+        display: inline-block;
+        height: 64px;
+        line-height: 64px;
+        padding-right: 56px;
+        font-size: 14px;
+        color: #2c3a46;
+        &:hover {
+            cursor: pointer;
+            color: #155bd4;
+        }
+    }
+    .menu-wrapper {
+        .caret {
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: " ";
+                height: 6px;
+                width: 10px;
+                top: -7px;
+                position: absolute;
+                left: 4px;
+                background-image: url(//b.yzcdn.cn/public_files/a5b140f7f8e5855d40257e570ee24cfb.png);
+                background-size: 10px 6px;
+                z-index: 1;
+            }
+        }
+        &:hover {
+            .caret::before {
+                background-image: url(//b.yzcdn.cn/public_files/fd971df0bc25d8310735e6e7813093c1.png);
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.header-container {
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+    .header-content {
+        width: 1200px;
+        height: 64px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        // border: 1px solid black;
+        .logo {
+            width: 72px;
+            height: 28px;
+            display: inline-block;
+            background-image: url(//b.yzcdn.cn/public_files/a1f0b722c1659ab713a56eeb9fa7df3e.png);
+            background-size: 72px 28px;
+            margin-top: 18px;
+            vertical-align: top;
+        }
+        .nav-link-container {
+            width: 72px;
+            display: inline-block;
+            margin-left: 8px;
+            margin-top: 20px;
+            vertical-align: top;
+            .nav-link {
+                float: left;
+                color: #969799;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 14px;
+            }
+        }
+        .nav-button-list {
+            list-style: none;
+            float: right;
+            margin: 0;
+            li {
+                display: inline-block;
+            }
+            .nav-search {
+                width: 94px;
+                .nav-search-btn {
+                    width: 94px;
+                    height: 64px;
+                    padding: 0;
+                    text-align: left;
+                    .search-icon {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 8px;
+                        vertical-align: middle;
+                        background-image: url(//img.yzcdn.cn/upload_files/2020/05/20/Fs7lVa_Z-_tONu2Px0GsY8fqhNGs.png);
+                        background-size: cover;
+                    }
+                    .search-text {
+                        font-family: PingFangSC-Regular;
+                        font-size: 14px;
+                        color: #323233;
+                        line-height: 20px;
+                    }
+                    &:hover {
+                        background-color: #ffffff;
+                        .search-text {
+                            color: #155bd4;
+                        }
+                        .search-icon {
+                            background-image: url(//img.yzcdn.cn/upload_files/2020/05/28/FmBT01uYaBQHuEzeIRXfjJYTLgBC.png);
+                        }
+                    }
+                }
+            }
+            .nav-login {
+                width: 104px;
+                .nav-login-btn {
+                    width: 100%;
+                    height: 36px;
+                    text-align: center;
+                    line-height: 36px;
+                    border: 1px solid #dcdee0;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    color: #323233;
+                    margin-top: 14px;
+                    &:hover {
+                        border-color: #155bd4;
+                        color: #155bd4;
+                    }
+                }
+            }
+            .nav-register {
+                width: 120px;
+                .nav-register-btn {
+                    width: 104px;
+                    height: 36px;
+                    text-align: center;
+                    line-height: 36px;
+                    border: 1px solid #dcdee0;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    margin-top: 14px;
+                    margin-left: 16px;
+                    background-color: #155bd4;
+                    &:hover {
+                        background-color: #114db4;
+                    }
+                }
+            }
+        }
+    }
+}

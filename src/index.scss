@@ -1,0 +1,26 @@
+.a-blue {
+    background-color: #38f;
+    color: #fff;
+    &:hover {
+        background-color: #1573f7;
+        color: #fff;
+    }
+}
+
+.a-green {
+    background-color: #00b389;
+    color: #fff;
+    &:hover {
+        background-color: #00966e;
+        color: #fff;
+    }
+}
+
+.a-white {
+    background-color: #ffffff;
+    color: #eb737f;
+    &:hover {
+        background-color: #ffffff;
+        color: #eb737f;
+    }
+}

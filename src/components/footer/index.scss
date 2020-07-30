@@ -1,0 +1,208 @@
+.footer-container {
+    width: 100%;
+    min-width: 1200px;
+    background: #272b2e;
+    color: #fff;
+    .container {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 1200px;
+        .about {
+            padding-top: 40px;
+            zoom: 1;
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .contact {
+                float: left;
+                margin-right: 35px;
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 14px;
+                    color: #fff;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    .text {
+                        display: inline-block;
+                        padding: 6px 0;
+                        text-decoration: none;
+                        color: #969799;
+                        letter-spacing: .58px;
+                        transition: color .3s;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                .service {
+                    margin-top: 10px;
+                    margin-right: 4px;
+                    padding: 5px 16px;
+                    background: #155bd4;
+                    border-radius: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+            .product {
+                float: left;
+                margin-right: 35px;
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 14px;
+                    color: #fff;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    .text {
+                        min-width: 90px;
+                        display: inline-block;
+                        padding: 6px 0;
+                        text-decoration: none;
+                        color: #969799;
+                        letter-spacing: .58px;
+                        transition: color .3s;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                .service {
+                    margin-top: 10px;
+                    margin-right: 4px;
+                    padding: 5px 16px;
+                    background: #155bd4;
+                    border-radius: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+            .news {
+                float: right;
+                margin-right: 0px;
+            }
+        }
+        .common {
+            font-size: 12px;
+            margin: 30px auto 34px;
+            border-top: 1px solid #3d4043;
+            border-bottom: 1px solid #3d4043;
+            padding: 27px 0;
+            color: #969799;
+            .left {
+                display: inline-block;
+                width: 80%;
+                border-right: 1px solid #3d4043;
+                .company {
+                    margin-bottom: 8px;
+                    height: 18px;
+                    .name {
+                        padding-right: 24px;
+                    }
+                }
+                .statement {
+                    margin-bottom: 8px;
+                    height: 18px;
+                    line-height: 1.6;
+                    .item {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #969799;
+                    }
+                    .split {
+                        padding: 0 4px;
+                        color: #3d4043;
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+                .record {
+                    margin-bottom: 8px;
+                    height: 18px;
+                    .public {
+                        margin-right: 24px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #969799;
+                        img {
+                            width: 14px;
+                            margin-right: 4px;
+                            vertical-align: text-bottom;
+                            display: inline-block;
+                        }
+                    }
+                    .licence {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #969799;
+                    }
+                    .zhehang {
+                        margin-left: 24px;
+                    }
+                }
+            }
+            .escort {
+                text-decoration: none;
+                width: 19%;
+                text-align: center;
+                display: inline-block;
+                vertical-align: baseline;
+                .img-container {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 56px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom: 13px;
+                    position: relative;
+                    .logo {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 56px;
+                    }
+                    .effect {
+                        position: absolute;
+                        width: 36px;
+                        left: 0;
+                        top: -1px;
+                        transform-origin: 28px 29.5px;
+                        animation: rotate 1.5s linear infinite;
+                    }
+                    @-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+                        to{-webkit-transform: rotate(360deg)}
+                    }
+                    @-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+                        to{-moz-transform: rotate(359deg)}
+                    }
+                    @-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+                        to{-o-transform: rotate(359deg)}
+                    }
+                    @keyframes rotate{from{transform: rotate(0deg)}
+                        to{transform: rotate(359deg)}
+                    }
+                }
+                .text {
+                    text-align: center;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                }
+                .intro {
+                    text-align: center;
+                    font-size: 12px;
+                    color: #c8c9cc;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
