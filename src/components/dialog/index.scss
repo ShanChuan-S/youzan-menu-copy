@@ -1,0 +1,175 @@
+.pop-container {
+    position: fixed;
+    width: 420px;
+    height: 176px;
+    right: 50%;
+    bottom: 40%;
+    margin-right: -210px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    z-index: 201;
+    border-radius: 2px;
+    background: #fff;
+    opacity: 1;
+    box-shadow: 0 2px 8px 0 rgba(50,50,51,.1);
+    .avator-img {
+        position: absolute;
+        top: -35px;
+        left: 185px;
+        width: 70px;
+        height: 70px;
+        z-index: 202;
+    }
+    .header {
+        height: 30px;
+        line-height: 30px;
+        .close-icon {
+            float: right;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+    .content {
+        text-align: center;
+        margin-top: 12px;
+        .phone {
+            font-size: 14px;
+            margin-bottom: 0px;
+            font-weight: 400;
+            color: #646566;
+            font-family: PingFangSC-Regular;
+            line-height: 30px;
+            .detail {
+                font-size: 20px;
+                color: #323233;
+                vertical-align: bottom;
+                font-weight: 600;
+            }
+            .call-us {
+                font-size: 14px;
+                margin-bottom: 6px;
+                font-weight: 400;
+                color: #646566;
+                font-family: PingFangSC-Regular;
+            }
+        }
+    }
+    .footer {
+        margin-top: 20px;
+        .free {
+            border: 1px solid #155bd4;
+            color: #155bd4;
+            margin-left: 92px;
+            width: 112px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            box-sizing: border-box;
+            font-weight: 300;
+            font-family: PingFangSC-Regular;
+            border-radius: 2px;
+            text-decoration: none;
+            &:hover {
+                background-color: #f0f7ff;
+            }
+        }
+        .adviser {
+            border: 1px solid #155bd4;
+            background: #155bd4;
+            color: #fff;
+            margin-left: 14px;
+            width: 112px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-weight: 300;
+            font-family: PingFangSC-Regular;
+            border-radius: 2px;
+            &:hover {
+                background-color: #114db4;
+                border-color: #114db4;
+            }
+        }
+        .animation {
+            position: absolute;
+            bottom: 0;
+            height: 20px;
+            width: 100%;
+            background-image: -webkit-linear-gradient(218deg,#3260c9 27%,#497ad6 87%);
+            background-image: -moz-linear-gradient(218deg,#3260c9 27%,#497ad6 87%);
+            background-image: linear-gradient(232deg,#3260c9 27%,#497ad6 87%);
+            opacity: 0.13;
+            overflow: hidden;
+            .animation1 {
+                bottom: 23px;
+                animation-duration: 18s;
+                background-color: hsla(0,0%,100%,.4);
+                animation-name: rotate;
+                position: absolute;
+                height: 2612px;
+                width: 2612px;
+                -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                animation-timing-function: linear;
+                border-radius: 48%;
+                background: #fff;
+            }
+            .animation2 {
+                bottom: 15px;
+                animation-duration: 20s;
+                background-color: hsla(0,0%,100%,.9);
+                animation-name: rotate1;
+                position: absolute;
+                height: 2612px;
+                width: 2612px;
+                -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                animation-timing-function: linear;
+                border-radius: 48%;
+                background: #fff;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+@keyframes rotate1 {
+    0% {
+        transform: translate(-42%) rotate(1turn);
+    }
+    50% {
+        transform: translate(-42%) rotate(180deg);
+    }
+    100% {
+        transform: translate(-42%) rotate(0deg);
+    }
+}

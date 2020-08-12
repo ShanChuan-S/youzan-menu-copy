@@ -15,6 +15,8 @@ import AchievementModule from './components/achievementModule/index.jsx';
 import PartnerModule from './components/partnerModule/index.jsx';
 import PromoteModule from './components/promoteModule/index.jsx';
 import Footer from './components/footer/index.jsx';
+import FloatPoint from './components/floatPoint/index.jsx';
+import PopTips from './components/dialog/index.jsx';
 
 import './index.scss';
 import 'antd/dist/antd.css';
@@ -37,6 +39,8 @@ class App extends Component {
                 <PartnerModule />
                 <PromoteModule />
                 <Footer />
+                <FloatPoint />
+                <PopTips />
             </div>
         )
     }

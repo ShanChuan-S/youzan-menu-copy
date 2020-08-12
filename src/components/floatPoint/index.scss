@@ -1,0 +1,108 @@
+.point-container {
+    position: fixed;
+    bottom: 50px;
+    z-index: 1001;
+    left: 50%;
+    margin-left: 565px;
+    text-align: center;
+    .item {
+        cursor: pointer;
+        display: block;
+        width: 60px;
+        height: 54px;
+        padding: 5px 0 7px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
+        background: #155BD4;
+        img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 12px;
+            color: #fff;
+            line-height: 17px;
+            text-align: center;
+            margin-top: 4px;
+            font-weight: 300;
+        }
+    }
+    .split {
+        background: #155BD4;
+        padding: 3px 0;
+        height: 1px;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        p {
+            height: 1px;
+            width: 48px;
+            background: rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+        }
+    }
+    .case:hover+.qrcode {
+        animation: base_show 0.5s;
+        display: block;
+    }
+    .qrcode {
+        position: absolute;
+        bottom: 0;
+        border-radius: 2px;
+        left: -185px;
+        padding: 10px 10px 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+        z-index: 9;
+        text-align: center;
+        min-width: 165px;
+        height: 176px;
+        box-sizing: border-box;
+        display: none;
+        .qrcode-img {
+            width: 127px;
+            height: 127px;
+            margin-top: 5px;
+        }
+        .qrcode-text {
+            font-size: 12px;
+            line-height: 17px;
+            color: #666;
+            margin-top: 10px;
+            white-space: nowrap;
+            margin-bottom: 0px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            transform: rotate(45deg);
+            right: -8px;
+            bottom: 21px;
+            box-shadow: 5px -5px 5px 0 rgba(0, 0, 0, 0.02);
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .point-container {
+       left: auto;
+       right: 0px;
+    }
+}
+
+// 动画
+@keyframes base_show {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
